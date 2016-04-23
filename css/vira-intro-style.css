@@ -1,0 +1,69 @@
+html,
+body {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+html .slides,
+body .slides,
+html > .dg,
+body > .dg {
+  display: none;
+}
+div.vira-links{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  padding: 30px 0px 0px 20px;
+}
+div.vira-links ul.vira-links-list{
+  margin : 0px;
+  padding : 0px;
+}
+div.vira-links ul.vira-links-list li{
+
+}
+div.vira-links ul.vira-links-list li a{
+  text-decoration: none;
+  padding : 5px 10px;
+  background-color: #333;
+  color : white;
+  margin-top : 2px;
+  display: inline-block;
+  -moz-transition: all, 0.4s 1s 0s;
+  -o-transition: all, 0.4s 1s 0s;
+  -webkit-transition: all, 0.4s 1s;
+  -webkit-transition-delay: 0s;
+  transition: all 0.4s 1s 0s;
+  border-left : 5px solid #BC3154;
+  -webkit-border-top-right-radius: 5px;
+-moz-border-radius-topright: 5px;
+border-top-right-radius: 5px;
+}
+div.vira-links ul.vira-links-list li a:hover{
+  /*color : #BC3154;*/
+  background-color: #4D4D4D;
+  padding:5px 15px;
+}
+/*@media(max-width : 600px){
+  div.vira-links {
+    top : 5px;
+  }
+  div.vira-links ul.vira-links-list li{
+    display : inline-block;
+  }
+}*/
+@media (min-width: 1000px) {
+  body {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAAAgCAMAAAAmC6asAAAAMFBMVEX19vf19vft7u/19vfp6uv19vfx8vP19vf19vf19vf19vfm5+j19vcAAAD19vfl5udu+MchAAAADnRSTlOIVcIz10StZneZEewiAMEzGswAAAF/SURBVHja7ZXZbsQwCEXjneXa/P/fFntm0uRpVGkaqVX8YAW4cMCxkq1ftW7STbpJP1sJb0lFPkJiekuq4TMkfkti+gxpe0uivRmB9LQOlHraNixnYErPONAfcYZntYfv9aDtJTmUO5OCeukGR5paqZtbGaSVzYWIlZ9DI6vVpC6shJw5TzdlZk47qZpldAkteBVToxNJrLGqoil6MPE9A1bSNorUXPYWvbLUjbg37lwRNPYW6x6eJK4ilB2hVmChJw2nWx4He3Map1exMVFvQyMVN78rlexbY7Gk0tWUm7gsHUnikQ6dwzLRLM/tRKIlGMMFoijmpthqBocLFTLWO41GnhrFXZIGTiTz5pIyA9G4uqSeSV3W4bSsqvycg0x9RTpcKHaHHybNOZBXfPa41jNjLCeqjRopzgI4kXYcsDqVZWJaZwVWHpYBTOuoACCvEpjTC3DFd6/oVV9YmPw+CWsb+H1SxVWkkgkoV5B6ijasXnMjBPIf/u436e+TvgDCaqPX6lO5yQAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+  }
+  body > .dg {
+    display: block;
+  }
+}
