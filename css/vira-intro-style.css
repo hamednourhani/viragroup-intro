@@ -26,7 +26,7 @@ div.vira-links ul.vira-links-list{
   padding : 0px;
 }
 div.vira-links ul.vira-links-list li{
-
+  position: relative;
 }
 div.vira-links ul.vira-links-list li a{
   text-decoration: none;
@@ -46,6 +46,25 @@ div.vira-links ul.vira-links-list li a{
 -moz-border-radius-topright: 5px;
 border-top-right-radius: 5px;
 }
+div.vira-links ul.vira-links-list li img{
+  -moz-transition: all, 0.4s 1s 0s;
+  -o-transition: all, 0.4s 1s 0s;
+  -webkit-transition: all, 0.4s 1s;
+  -webkit-transition-delay: 0s;
+  transition: all 0.4s 1s 0s;
+  opacity : 0;
+  pointer-events: none;
+  max-width : 200px;
+  border : 3px solid #4D4D4D ;
+  position: absolute;
+  top : 0px;
+  left : 120%;
+}
+div.vira-links ul.vira-links-list li:hover>img{
+  opacity : 0.9;
+  /*pointer-events: visible;*/
+  left : 105%;
+}
 div.vira-links ul.vira-links-list li a:hover{
   /*color : #BC3154;*/
   background-color: #4D4D4D;
@@ -60,10 +79,7 @@ div.vira-links ul.vira-links-list li a:hover{
   }
 }*/
 @media (min-width: 1000px) {
-  body {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAAAgCAMAAAAmC6asAAAAMFBMVEX19vf19vft7u/19vfp6uv19vfx8vP19vf19vf19vf19vfm5+j19vcAAAD19vfl5udu+MchAAAADnRSTlOIVcIz10StZneZEewiAMEzGswAAAF/SURBVHja7ZXZbsQwCEXjneXa/P/fFntm0uRpVGkaqVX8YAW4cMCxkq1ftW7STbpJP1sJb0lFPkJiekuq4TMkfkti+gxpe0uivRmB9LQOlHraNixnYErPONAfcYZntYfv9aDtJTmUO5OCeukGR5paqZtbGaSVzYWIlZ9DI6vVpC6shJw5TzdlZk47qZpldAkteBVToxNJrLGqoil6MPE9A1bSNorUXPYWvbLUjbg37lwRNPYW6x6eJK4ilB2hVmChJw2nWx4He3Map1exMVFvQyMVN78rlexbY7Gk0tWUm7gsHUnikQ6dwzLRLM/tRKIlGMMFoijmpthqBocLFTLWO41GnhrFXZIGTiTz5pIyA9G4uqSeSV3W4bSsqvycg0x9RTpcKHaHHybNOZBXfPa41jNjLCeqjRopzgI4kXYcsDqVZWJaZwVWHpYBTOuoACCvEpjTC3DFd6/oVV9YmPw+CWsb+H1SxVWkkgkoV5B6ijasXnMjBPIf/u436e+TvgDCaqPX6lO5yQAAAABJRU5ErkJggg==');
-    background-repeat: no-repeat;
-  }
+  
   body > .dg {
     display: block;
   }
