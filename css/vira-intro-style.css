@@ -86,6 +86,7 @@ z-index: 99999;
   -webkit-transition: all, 0.6s 1s;
   -webkit-transition-delay: 0s;
   transition: all 0.6s 1s 0s;
+  outline: none;
 }
 a.first-section-handler:hover,
 a.second-section-handler:hover{
