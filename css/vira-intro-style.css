@@ -112,3 +112,27 @@ a.second-section-handler img{
 #particle-slider div {
     display: none;
 }
+ul.branches-list{
+	margin : 0px;
+	padding : 100px 50px 50px;
+
+}
+ul.branches-list li{
+	display : inline-block;
+	width : 24%;
+	text-align: center;
+}
+ul.branches-list li img{
+	-moz-transition: all, 0.6s 1s 0s;
+  -o-transition: all, 0.6s 1s 0s;
+  -webkit-transition: all, 0.6s 1s;
+  -webkit-transition-delay: 0s;
+  transition: all 0.6s 1s 0s;
+	border : 3px solid #333;
+	margin : 10px;
+	opacity: 0.85;
+	/*cursor: pointer;*/
+}
+ul.branches-list li img:hover{
+	opacity: 1;
+}
