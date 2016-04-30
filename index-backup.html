@@ -8,6 +8,7 @@
     
     
         <link rel="stylesheet" href="css/vira-intro-style.css">
+        <link rel="stylesheet" href="css/jquery.fullpage.min.css">
 
     
     
@@ -15,7 +16,8 @@
   </head>
 
   <body>
-  
+  <div id="fullpage">
+    <div class="section">
       <div class="particle-slider-container">
       <div id="particle-slider">
        <div class="slides">
@@ -30,38 +32,59 @@
 			<ul class="vira-links-list">
 				<li>
 					<a href="http://viradeco.com/index.php">ViraDeco</a>
-          <img src="images/branches/01.jpg" alt="">
+          <img src="images/thumbs/viradeco.jpg" alt="">
 				</li>
 				<li>
-					<a href="http://viracleanroom.com/index.php">Vira Clean Room</a>
-          <img src="images/branches/03.jpg" alt="">
+					<a href="http://viracleanroom.com/index.php">ViraCleanRoom</a>
+          <img src="images/thumbs/viracleanroom.jpg" alt="">
 				</li>
-        <li>
-          <a href="http://vira-lab.com/index.php">Laboratory Furniture </a>
-          <img src="images/branches/05.jpg" alt="">
-        </li>
-        <li>
-          <a href="http://viraholding.com/index.php">Vira Holding</a>
-          <img src="images/branches/06.jpg" alt="">
-        </li>
-        <li>
-          <a href="http://virahome.com/index.php">Luxury Home Furniture</a>
-          <img src="images/branches/02.jpg" alt="">
-        </li>
-        <li>
-          <a href="http://virahoteling.com/index.php">Hotel Furniture & Decoration</a>
-          <img src="images/branches/07.jpg" alt="">
-        </li>
-
         
 			</ul>
 		</div>
     
-  
-    
+  </div>
+    <a href="#secondPage" id="second-section-handler" class="second-section-handler">
+      <img src="images/icons/down.png" alt="Next Page">
+    </a>
+</div>
+    <div class="section">
+      
+      <ul class="branches-list">
+        <li>
+          <img src="images/branches/01.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/branches/02.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/branches/03.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/branches/04.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/branches/05.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/branches/06.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/branches/07.jpg" alt="">
+        </li>
+        <li>
+          <img src="images/branches/08.jpg" alt="">
+        </li>
+      </ul>
+
+       <a href="#firstPage" id="second-section-handler" class="second-section-handler">
+        <img src="images/icons/up.png" alt="Home">
+    </div>
   
         
         <!-- <script src="js/index.js"></script> -->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+        <script type="text/javascript" src="js/jquery.fullpage.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/particleslider.js"></script>
         <script type="text/javascript" type="text/javascript">
