@@ -30,8 +30,9 @@ div.vira-links ul.vira-links-list li{
 }
 div.vira-links ul.vira-links-list li a{
   text-decoration: none;
-  padding : 5px 10px;
-  min-width : 130px;
+  padding : 10px;
+  min-width : 140px;
+  font-size : 110%;
   background-color: rgba(0,0,0,0.6);
   color : white;
   margin-top : 2px;
@@ -68,7 +69,7 @@ div.vira-links ul.vira-links-list li:hover>img{
 div.vira-links ul.vira-links-list li a:hover{
   /*color : #BC3154;*/
   background-color: rgba(77,77,77,0.6);
-  padding:5px 15px;
+  padding:10px 15px;
 }
 a.first-section-handler,
 a.second-section-handler{
